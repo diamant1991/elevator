@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Список товаров</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,500,300,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="main-block main-block_inner">
+        <div class="fixed-panel">
+        	<nav class="nav">
+        		<div class="table-block">
+        			<div class="block-vertical">
+        				<ul class="clearfix">
+        					<li class="nav__item">
+        						<a href="#" class="nav__link">О компании</a>
+        					</li>
+        					<li class="nav__item">
+        						<a href="#" class="nav__link">Услуги</a>
+        					</li>
+        					<li class="nav__item">
+        						<a href="#" class="nav__link">Каталог запчастей</a>
+        					</li>
+        					<li class="nav__item">
+        						<a href="#" class="nav__link">Полезные статьи</a>
+        					</li>
+        					<li class="nav__item">
+        						<a href="#" class="nav__link">Новости</a>
+        					</li>
+        					<li class="nav__item">
+        						<a href="#" class="nav__link">Контакты</a>
+        					</li>
+        				</ul>
+        			</div>
+        		</div>
+        	</nav>
+        	<div class="panel-social">
+        		<div class="table-block">
+        			<div class="block-vertical">
+        				<a href="#">
+        					<img src="img/vk.png" alt="">
+        				</a>
+        				<a href="#">
+        					<img src="img/odnolkasniki.png" alt="">
+        				</a>
+        				<a href="#">
+        					<img src="img/facebook.png" alt="">
+        				</a>
+        				<a href="#">
+        					<img src="img/youtube.png" alt="">
+        				</a>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <header class="header">
+        	<div class="header__wrapp clearfix">
+        		<div class="col-sm-4">
+        			<div class="row">
+        				<div class="logo">
+        					<a href="#">
+        						<img src="img/logo.png" alt="">
+        					</a>
+        					<div class="logo-text">
+        						лучшие обслуживание только у нас!
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="col-sm-4">
+        			<div class="row">
+        				<div class="header__contact">
+        					<div class="table-block">
+        						<div class="block-vertical">
+        							<div class="header__contact__item">
+        								<p>info@company.ru</p>
+        								<p>г. Пермь, ул. Ленина 88</p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="col-sm-4">
+        			<div class="row">
+        				<div class="header__tel clearfix">
+        					<div class="tel-item">
+        						+7 (965) 294-14-14
+        					</div>
+        					<div class="tel-item">
+        						+7 (965) 294-14-14
+        					</div>
+        					<a href="#" class="item-link item-link_back" data-toggle="modal" data-target="#application">Обратная связь</a>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </header>
+        <div class="content clearfix">
+          <div class="col-md-3">
+            <div class="row">
+              <aside class="sidebar">
+                <div class="side-menu">
+                	<ul>
+                		<li class="side-menu__item">
+                			<a href="#" class="side-menu__link side-menu__link_company toggle">О компании</a>
+                		</li>
+                		<li class="side-menu__item active">
+                			<a href="#" class="side-menu__link side-menu__link_service toggle active">Услуги</a>
+                			<ul class="side-menu__child">
+                				<li>
+                					<a href="#">Подпункт 1</a>
+                				</li>
+                				<li>
+                					<a href="#">Подпункт 2</a>
+                				</li>
+                				<li>
+                					<a href="#">Подпункт 3</a>
+                				</li>
+                				<li>
+                					<a href="#">Подпункт 4</a>
+                				</li>
+                			</ul>
+                		</li>
+                		<li class="side-menu__item">
+                			<a href="#" class="side-menu__link side-menu__link_cat toggle">Каталог запчастей</a>
+                		</li>
+                		<li class="side-menu__item">
+                			<a href="#" class="side-menu__link side-menu__link_article">Полезные статьи</a>
+                		</li>
+                		<li class="side-menu__item">
+                			<a href="#" class="side-menu__link side-menu__link_news">Новости</a>
+                		</li>
+                		<li class="side-menu__item">
+                			<a href="#" class="side-menu__link side-menu__link_contact">Контакты</a>
+                		</li>
+                	</ul>
+                </div>  
+                <div class="sidebar__banner">
+                	<a href="#">
+                		<img src="img/banner.jpg" alt="">
+                	</a>
+                </div>  
+                <div class="sidebar__widget">
+                	<img src=img/vk-widget.jpg alt="">
+                </div>     
+              </aside>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <article class="content-wrapp content-wrapp__inner">
+                <div class="breadcrumb">
+                  <a href="#">Главная</a> <span class="breadcrumb__delimiter">/</span>   
+                  <a href="#">Запчасти для автомобильных подъемников</a>
+                </div>
+                <div class="block-title">
+                  <div class="block-title__large">запчасти для автомобильных подъемников</div>
+                </div>
+                <div class="product-list clearfix">
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="product-list__item">
+                        <div class="product-list__content">
+                          <div class="product-list__img">
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="#">
+                                  <img src="img/product.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-list__descr">
+                            <div class="product-list__name">
+                              <a href="#">Концевик</a>
+                            </div>
+                            <div class="product-list__info clearfix">
+                              <div class="product-list__price">
+                                <div class="table-block">
+                                  <div class="block-vertical">1 900 руб.</div>
+                                </div>
+                              </div>
+                              <a href="#" class="item-link item-link_buy">Купить</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="product-list__item">
+                        <div class="product-list__content">
+                          <div class="product-list__img">
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="#">
+                                  <img src="img/product.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-list__descr">
+                            <div class="product-list__name">
+                              <a href="#">Концевик</a>
+                            </div>
+                            <div class="product-list__info clearfix">
+                              <div class="product-list__price">
+                                <div class="table-block">
+                                  <div class="block-vertical">1 900 руб.</div>
+                                </div>
+                              </div>
+                              <a href="#" class="item-link item-link_buy">Купить</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="product-list__item">
+                        <div class="product-list__content">
+                          <div class="product-list__img">
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="#">
+                                  <img src="img/product.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-list__descr">
+                            <div class="product-list__name">
+                              <a href="#">Концевик</a>
+                            </div>
+                            <div class="product-list__info clearfix">
+                              <div class="product-list__price">
+                                <div class="table-block">
+                                  <div class="block-vertical">1 900 руб.</div>
+                                </div>
+                              </div>
+                              <a href="#" class="item-link item-link_buy">Купить</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="product-list__item">
+                        <div class="product-list__content">
+                          <div class="product-list__img">
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="#">
+                                  <img src="img/product.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-list__descr">
+                            <div class="product-list__name">
+                              <a href="#">Концевик</a>
+                            </div>
+                            <div class="product-list__info clearfix">
+                              <div class="product-list__price">
+                                <div class="table-block">
+                                  <div class="block-vertical">1 900 руб.</div>
+                                </div>
+                              </div>
+                              <a href="#" class="item-link item-link_buy">Купить</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="product-list__item">
+                        <div class="product-list__content">
+                          <div class="product-list__img">
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="#">
+                                  <img src="img/product.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-list__descr">
+                            <div class="product-list__name">
+                              <a href="#">Концевик</a>
+                            </div>
+                            <div class="product-list__info clearfix">
+                              <div class="product-list__price">
+                                <div class="table-block">
+                                  <div class="block-vertical">1 900 руб.</div>
+                                </div>
+                              </div>
+                              <a href="#" class="item-link item-link_buy">Купить</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="product-list__item">
+                        <div class="product-list__content">
+                          <div class="product-list__img">
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="#">
+                                  <img src="img/product.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-list__descr">
+                            <div class="product-list__name">
+                              <a href="#">Концевик</a>
+                            </div>
+                            <div class="product-list__info clearfix">
+                              <div class="product-list__price">
+                                <div class="table-block">
+                                  <div class="block-vertical">1 900 руб.</div>
+                                </div>
+                              </div>
+                              <a href="#" class="item-link item-link_buy">Купить</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="product-list__item">
+                        <div class="product-list__content">
+                          <div class="product-list__img">
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="#">
+                                  <img src="img/product.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-list__descr">
+                            <div class="product-list__name">
+                              <a href="#">Концевик</a>
+                            </div>
+                            <div class="product-list__info clearfix">
+                              <div class="product-list__price">
+                                <div class="table-block">
+                                  <div class="block-vertical">1 900 руб.</div>
+                                </div>
+                              </div>
+                              <a href="#" class="item-link item-link_buy">Купить</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="product-list__item">
+                        <div class="product-list__content">
+                          <div class="product-list__img">
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="#">
+                                  <img src="img/product.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-list__descr">
+                            <div class="product-list__name">
+                              <a href="#">Концевик</a>
+                            </div>
+                            <div class="product-list__info clearfix">
+                              <div class="product-list__price">
+                                <div class="table-block">
+                                  <div class="block-vertical">1 900 руб.</div>
+                                </div>
+                              </div>
+                              <a href="#" class="item-link item-link_buy">Купить</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="product-list__item">
+                        <div class="product-list__content">
+                          <div class="product-list__img">
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="#">
+                                  <img src="img/product.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-list__descr">
+                            <div class="product-list__name">
+                              <a href="#">Концевик</a>
+                            </div>
+                            <div class="product-list__info clearfix">
+                              <div class="product-list__price">
+                                <div class="table-block">
+                                  <div class="block-vertical">1 900 руб.</div>
+                                </div>
+                              </div>
+                              <a href="#" class="item-link item-link_buy">Купить</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- product list -->
+                <div class="pagination clearfix">
+                  <div class="pagination__content clearfix">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="footer ">
+  	<div class="container">
+  		<div class="footer-wrapp clearfix">
+  			<div class="footer__logo">
+  				<a href="#">
+  					<img src="img/footer-logo.png" alt="">
+  				</a>
+  			</div>
+  			<div class="footer__nav">
+  				<ul class="clearfix">
+  					<li><a href="#">О компани</a></li>
+  					<li><a href="#">услуги</a></li>
+  					<li><a href="#">каталог запчастей</a></li>
+  					<li><a href="#">полезные статьи</a></li>
+  					<li><a href="#">новости</a></li>
+  					<li><a href="#">контакты</a></li>
+  				</ul>
+  				<div class="policy">
+  					<a href="#">Политика конфиденциальности</a>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="application" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+            <img src="img/close-modal.png" alt="">
+          </button>
+          <h4 class="modal-title">Оставьте заявку</h4>
+          <div class="modal__small-title">Наши менеджеры свяжутся с вами в течении пару минут</div>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="modal__item">
+              <input type="text" placeholder="Ваше Имя" class="modal__input">
+            </div>
+            <div class="modal__item">
+              <input type="text" placeholder="Ваш Телефон" class="modal__input">
+            </div>
+            <div class="modal__item">
+              <input type="text" placeholder="Ваш e-mail" class="modal__input">
+            </div>
+            <div class="modal__item">
+              <input type="submit" value="Отправить" class="item-link item-link_submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="order" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+            <img src="img/close-modal.png" alt="">
+          </button>
+          <h4 class="modal-title">Оформить заказ</h4>
+          <div class="modal__small-title">Наши менеджеры свяжутся с вами в течении пару минут</div>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="modal__item">
+              <input type="text" placeholder="Ваше Имя" class="modal__input">
+            </div>
+            <div class="modal__item">
+              <input type="text" placeholder="Ваш Телефон" class="modal__input">
+            </div>
+            <div class="modal__item">
+              <input type="text" placeholder="Ваш e-mail" class="modal__input">
+            </div>
+            <div class="modal__item">
+              <input type="submit" value="Отправить" class="item-link item-link_submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="thank" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+            <img src="img/close-modal.png" alt="">
+          </button>
+          <h4 class="modal-title">Спасибо</h4>
+          <div class="modal__small-title">Мы свяжемся с Вами в ближайшее время!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
