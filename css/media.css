@@ -1,0 +1,155 @@
+@media (max-width: 1199px) {
+  .tel-item {
+    font-size: 28px; } }
+
+@media (max-width: 991px) {
+  .tel-item {
+    font-size: 18px;
+    font-weight: 800; }
+    .tel-item:before {
+      left: 7px;
+      top: -27px; }
+    .tel-item:first-child:before {
+      content: none; }
+  .header__contact {
+    font-size: 14px; }
+  .logo-text {
+    font-size: 14px; }
+  .logo > a {
+    display: block;
+    padding-right: 15px; }
+  .side-menu__link {
+    font-size: 12px;
+    padding-left: 38px; }
+    .side-menu__link:before {
+      left: 6px; }
+  .side-menu__child > li > a {
+    font-size: 12px;
+    height: 45px;
+    line-height: 47px; }
+  .slider__item {
+    height: 220px; }
+  .slider__title {
+    font-size: 18px; }
+  .profit__content {
+    padding-left: 0;
+    height: 150px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+    padding-bottom: 15px; }
+  .profit__item {
+    padding-left: 10px; }
+  .profit {
+    margin-left: -10px;
+    padding-right: 10px; }
+  .profit .block-vertical {
+    vertical-align: bottom; }
+  .content {
+    padding-left: 10px; }
+  .slider {
+    padding-right: 10px; }
+  .block-title__large {
+    font-size: 18px; }
+  .block-title__small {
+    font-size: 12px;
+    font-weight: 400; }
+  .services {
+    padding: 15px 10px; }
+  .block-title {
+    padding-left: 10px;
+    margin-bottom: 20px; }
+  .services__img {
+    height: 155px;
+    padding: 0 15px; }
+  .services__item {
+    height: 230px; }
+  .about-company {
+    padding: 20px 10px;
+    margin-bottom: 20px; }
+  .news__item {
+    font-size: 12px; }
+  .news {
+    padding: 0 10px;
+    margin-bottom: 10px; }
+  .consultation__number {
+    font-size: 24px; }
+  .consultation__text {
+    font-size: 24px; }
+  .footer__logo {
+    width: 30%; }
+  .footer__nav {
+    float: left;
+    width: 70%;
+    padding-top: 5px; }
+    .footer__nav ul {
+      float: left;
+      width: 70%; }
+      .footer__nav ul li {
+        width: 50%;
+        margin-bottom: 10px; }
+        .footer__nav ul li a {
+          font-size: 12px; }
+    .footer__nav .policy {
+      float: left;
+      width: 30%;
+      padding-right: 0;
+      text-align: left;
+      margin-top: 0; }
+  .header {
+    height: auto; } }
+
+@media (min-width: 768px) {
+  .visible-xs {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding-top: 0; }
+    .wrapper > .container {
+      padding: 0; }
+  .hidden-xs {
+    display: none !important; }
+  .content {
+    padding-left: 0; }
+  .slider {
+    padding-right: 0;
+    -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2); }
+  .profit .block-vertical {
+    vertical-align: middle; }
+  .profit__content {
+    height: 60px;
+    padding-bottom: 0;
+    padding-left: 120px;
+    text-align: left;
+    border: 1px solid #ff4b00; }
+  .profit__item {
+    padding-bottom: 10px; }
+  .profit {
+    padding-left: 10px; }
+  .services__img {
+    height: 175px; }
+  .consultation__text {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px; }
+  .consultation__number {
+    display: block; }
+  .footer__nav ul {
+    float: none;
+    width: 100%; }
+  .footer {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 30px; }
+  .footer__nav .policy {
+    float: none;
+    width: 100%; }
+  .footer__nav ul li {
+    padding-left: 0; }
+  .footer__nav {
+    float: none;
+    width: 100%; }
+  .about-company p {
+    font-size: 12px; } }

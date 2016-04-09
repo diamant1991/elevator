@@ -16,7 +16,7 @@
   <div class="wrapper">
     <div class="container">
       <div class="main-block main-block_inner">
-        <div class="fixed-panel">
+        <div class="fixed-panel hidden-xs">
         	<nav class="nav">
         		<div class="table-block">
         			<div class="block-vertical">
@@ -62,9 +62,37 @@
         		</div>
         	</div>
         </div>
-        <header class="header">
+        <div class="mobile-panel clearfix visible-xs">
+        	<button class="navbar-toggle">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        	</button>
+        	<div class="mobile-logo">
+        		<div class="table-block">
+        			<div class="block-vertical">
+        				<a href="#">
+        					<img src="img/logo.png" alt="">
+        				</a>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="mobile-panel__link">
+        		<div class="table-block">
+        			<div class="block-vertical">
+        				<a href="#">
+        					<img src="img/post.png" alt="">
+        				</a>
+        				<a href="#">
+        					<img src="img/small-tel-icon.png" alt="">
+        				</a>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <header class="header hidden-xs">
         	<div class="header__wrapp clearfix">
-        		<div class="col-sm-4">
+        		<div class="col-sm-5">
         			<div class="row">
         				<div class="logo">
         					<a href="#">
@@ -76,7 +104,7 @@
         				</div>
         			</div>
         		</div>
-        		<div class="col-sm-4">
+        		<div class="col-sm-3">
         			<div class="row">
         				<div class="header__contact">
         					<div class="table-block">
@@ -111,12 +139,26 @@
               <aside class="sidebar">
                 <div class="side-menu">
                 	<ul>
-                		<li class="side-menu__item">
+                		<li class="side-menu__item side-menu__item_drop">
                 			<a href="#" class="side-menu__link side-menu__link_company toggle">О компании</a>
+                      <ul class="side-menu__child">
+                        <li>
+                          <a href="#">Подпункт 1</a>
+                        </li>
+                        <li>
+                          <a href="#">Подпункт 2</a>
+                        </li>
+                        <li>
+                          <a href="#">Подпункт 3</a>
+                        </li>
+                        <li>
+                          <a href="#">Подпункт 4</a>
+                        </li>
+                      </ul>
                 		</li>
-                		<li class="side-menu__item active">
+                		<li class="side-menu__item side-menu__item_drop">
                 			<a href="#" class="side-menu__link side-menu__link_service toggle active">Услуги</a>
-                			<ul class="side-menu__child">
+                			<ul class="side-menu__child" style="display: block;">
                 				<li>
                 					<a href="#">Подпункт 1</a>
                 				</li>
@@ -131,8 +173,22 @@
                 				</li>
                 			</ul>
                 		</li>
-                		<li class="side-menu__item">
+                		<li class="side-menu__item side-menu__item_drop">
                 			<a href="#" class="side-menu__link side-menu__link_cat toggle">Каталог запчастей</a>
+                      <ul class="side-menu__child">
+                        <li>
+                          <a href="#">Подпункт 1</a>
+                        </li>
+                        <li>
+                          <a href="#">Подпункт 2</a>
+                        </li>
+                        <li>
+                          <a href="#">Подпункт 3</a>
+                        </li>
+                        <li>
+                          <a href="#">Подпункт 4</a>
+                        </li>
+                      </ul>
                 		</li>
                 		<li class="side-menu__item">
                 			<a href="#" class="side-menu__link side-menu__link_article">Полезные статьи</a>
@@ -196,12 +252,12 @@
   <footer class="footer ">
   	<div class="container">
   		<div class="footer-wrapp clearfix">
-  			<div class="footer__logo">
+  			<div class="footer__logo hidden-xs">
   				<a href="#">
   					<img src="img/footer-logo.png" alt="">
   				</a>
   			</div>
-  			<div class="footer__nav">
+  			<div class="footer__nav clearfix">
   				<ul class="clearfix">
   					<li><a href="#">О компани</a></li>
   					<li><a href="#">услуги</a></li>
