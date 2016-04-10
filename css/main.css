@@ -1,6 +1,3 @@
-/*
-* Third Party
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1009,9 +1006,6 @@ ul.bxslider {
   height: 100%;
   width: 100%; }
 
-/*
-* Custom
-*/
 .fancybox-wrap,
 .fancybox-skin,
 .fancybox-outer,
@@ -1378,7 +1372,8 @@ body {
   .item-link_back {
     display: block;
     width: 205px;
-    float: right; }
+    float: right;
+    outline: 0; }
     .item-link_back:hover {
       -webkit-box-shadow: none;
       box-shadow: none; }
@@ -1851,7 +1846,8 @@ body {
   .modal__small-title {
     font-size: 14px;
     font-weight: 800;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    line-height: 1.2; }
   .modal__close {
     border: 0;
     outline: 0;
@@ -2027,51 +2023,50 @@ body {
       color: #ff4b00;
       border-color: #ff4b00; }
 
-.contacts__item {
-  margin-bottom: 15px;
-  font-size: 14px;
-  line-height: 1.4; }
+.contacts {
+  padding-top: 15px; }
+  .contacts__item {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.4; }
+  .contacts__content {
+    margin-bottom: 35px; }
+  .contacts__map {
+    text-align: center;
+    padding-bottom: 30px; }
+  .contacts__textarea {
+    display: block;
+    width: 100%;
+    height: 140px;
+    outline: 0;
+    resize: none;
+    background: #f7f7f7;
+    border: 1px solid #d7d7d7;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif; }
+  .contacts__form__block {
+    margin-bottom: 10px; }
+  .contacts__form__item {
+    padding-left: 10px; }
+  .contacts__input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    outline: 0;
+    background: #f7f7f7;
+    border: 1px solid #d7d7d7;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif; }
 
-.contacts__content {
-  margin-bottom: 35px; }
-
-.contacts__map {
-  text-align: center;
-  padding-bottom: 30px; }
-
-.contacts__textarea {
-  display: block;
-  width: 100%;
-  height: 140px;
-  outline: 0;
-  resize: none;
-  background: #f7f7f7;
-  border: 1px solid #d7d7d7;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  padding-left: 15px;
-  padding-top: 10px;
-  font-size: 12px;
-  font-family: "Roboto", sans-serif; }
-
-.contacts__form__block {
-  margin-bottom: 10px; }
-
-.contacts__form__item {
-  padding-left: 10px; }
-
-.contacts__input {
-  display: block;
-  width: 100%;
-  height: 38px;
-  outline: 0;
-  background: #f7f7f7;
-  border: 1px solid #d7d7d7;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  padding-left: 15px;
-  font-size: 12px;
-  font-family: "Roboto", sans-serif; }
+.news-list__img {
+  padding-right: 10px; }
 
 .news-list__item {
   margin-bottom: 30px; }
@@ -2245,9 +2240,9 @@ body {
   height: 45px;
   background: #fff;
   position: relative;
-  z-index: 2;
+  z-index: 52;
   padding-left: 60px;
-  padding-right: 10px;
+  padding-right: 15px;
   -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2); }
   .mobile-panel__link {
@@ -2286,3 +2281,64 @@ body {
   float: left;
   width: 100px;
   height: 45px; }
+
+.mobile-menu {
+  position: absolute;
+  z-index: 51;
+  left: 0;
+  top: 45px;
+  width: 100%;
+  display: none; }
+  .mobile-menu__toggle.active {
+    color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4d00), to(#ff8300));
+    background: -webkit-linear-gradient(top, #ff4d00 0%, #ff8300 100%);
+    background: -o-linear-gradient(top, #ff4d00 0%, #ff8300 100%);
+    background: linear-gradient(180deg, #ff4d00 0%, #ff8300 100%); }
+    .mobile-menu__toggle.active:before {
+      width: 12px;
+      height: 8px;
+      margin-top: -4px;
+      background: url("../img/toggle-active.png") no-repeat; }
+  .mobile-menu__toggle:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    right: 5px;
+    top: 50%;
+    margin-top: -6px;
+    width: 8px;
+    height: 12px;
+    background: url("../img/toggle.png") no-repeat; }
+  .mobile-menu > ul {
+    width: 50%;
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15); }
+    .mobile-menu > ul > li > a {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #000;
+      display: block;
+      padding-left: 10px;
+      height: 32px;
+      position: relative;
+      line-height: 32px;
+      border-bottom: 1px solid #c7c7c7; }
+    .mobile-menu > ul > li > ul {
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      top: 0;
+      display: none;
+      background: #eaeaea;
+      width: 50%; }
+      .mobile-menu > ul > li > ul a {
+        display: block;
+        padding: 8px 20px;
+        line-height: 1.3;
+        color: #000;
+        font-size: 12px;
+        border-bottom: 1px solid #c7c7c7; }

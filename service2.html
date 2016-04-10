@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,500,300,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
   <![endif]-->
@@ -90,6 +91,46 @@
         		</div>
         	</div>
         </div>
+        <div class="mobile-menu visible-xs">
+        	<ul>
+        		<li>
+        			<a href="#" class="mobile-menu__toggle">о компании</a>
+        			<ul class="modile-menu__drop">
+        				<li><a href="#">Пункт 1</a></li>
+        				<li><a href="#">Пункт 2</a></li>
+        				<li><a href="#">Пункт 3</a></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="#" class="mobile-menu__toggle">услуги</a>
+        			<ul class="modile-menu__drop">
+        				<li><a href="#">Пункт 1</a></li>
+        				<li><a href="#">Пункт 2</a></li>
+        				<li><a href="#">Пункт 3</a></li>
+        				<li><a href="#">Пункт 4</a></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="#" class="mobile-menu__toggle">каталог запчастей</a>
+        			<ul class="modile-menu__drop">
+        				<li><a href="#">Пункт 1</a></li>
+        				<li><a href="#">Пункт 2</a></li>
+        				<li><a href="#">Пункт 3</a></li>
+        				<li><a href="#">Пункт 4</a></li>
+        				<li><a href="#">Пункт 5</a></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="#">полезные статьи</a>
+        		</li>
+        		<li>
+        			<a href="#">новости</a>
+        		</li>
+        		<li>
+        			<a href="#">контакты</a>
+        		</li>
+        	</ul>
+        </div>
         <header class="header hidden-xs">
         	<div class="header__wrapp clearfix">
         		<div class="col-sm-5">
@@ -134,7 +175,7 @@
         	</div>
         </header>
         <div class="content clearfix">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-4 hidden-xs">
             <div class="row">
               <aside class="sidebar">
                 <div class="side-menu">
@@ -212,7 +253,7 @@
               </aside>
             </div>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-9 col-sm-8">
             <div class="row">
               <div class="service-header">
                 <div class="service-img" style="background-image: url('img/service-img2.jpg')">
@@ -360,7 +401,7 @@
                   </div>
                 </div>
               </div>
-              <div class="consultation consultation_inner">
+              <div class="consultation consultation_inner hidden-xs">
                 <div class="consultation_inner__title">
                   нужна консультация?
                 </div>
@@ -371,6 +412,20 @@
                   Получить консультацию
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="consultation visible-xs">
+      <div class="container">
+        <div class="consultation__item">
+          <div class="table-block">
+            <div class="block-vertical">
+              <span class="consultation__number hidden-xs">+7 (965) 294-14-14</span>
+              <span class="consultation__text hidden-xs">Начните с консультации!</span>
+              <span class="consultation__text visible-xs">Начните с консультации!</span>
+              <span class="consultation__number visible-xs">+7 (965) 294-14-14</span>
             </div>
           </div>
         </div>
@@ -480,6 +535,7 @@
     </div>
   </div>
 
+<script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
 <script>
   $('#certificate-carousel').owlCarousel({

@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,500,300,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
   <![endif]-->
@@ -90,6 +91,46 @@
         		</div>
         	</div>
         </div>
+        <div class="mobile-menu visible-xs">
+        	<ul>
+        		<li>
+        			<a href="#" class="mobile-menu__toggle">о компании</a>
+        			<ul class="modile-menu__drop">
+        				<li><a href="#">Пункт 1</a></li>
+        				<li><a href="#">Пункт 2</a></li>
+        				<li><a href="#">Пункт 3</a></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="#" class="mobile-menu__toggle">услуги</a>
+        			<ul class="modile-menu__drop">
+        				<li><a href="#">Пункт 1</a></li>
+        				<li><a href="#">Пункт 2</a></li>
+        				<li><a href="#">Пункт 3</a></li>
+        				<li><a href="#">Пункт 4</a></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="#" class="mobile-menu__toggle">каталог запчастей</a>
+        			<ul class="modile-menu__drop">
+        				<li><a href="#">Пункт 1</a></li>
+        				<li><a href="#">Пункт 2</a></li>
+        				<li><a href="#">Пункт 3</a></li>
+        				<li><a href="#">Пункт 4</a></li>
+        				<li><a href="#">Пункт 5</a></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="#">полезные статьи</a>
+        		</li>
+        		<li>
+        			<a href="#">новости</a>
+        		</li>
+        		<li>
+        			<a href="#">контакты</a>
+        		</li>
+        	</ul>
+        </div>
         <header class="header hidden-xs">
         	<div class="header__wrapp clearfix">
         		<div class="col-sm-5">
@@ -143,7 +184,7 @@
               <div class="block-title__large">Контактная информация</div>
             </div>
             <div class="contacts__content clearfix">
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-5">
                 <div class="row">
                   <div class="contacts__text">
                    <div class="contacts__item"> 
@@ -159,11 +200,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-7">
                 <div class="row">
                   <div class="contacts__form clearfix">
                     <form action="">
-                      <div class="col-sm-6">
+                      <div class="col-sm-6 hidden-xs">
                         <div class="row">
                           <div class="contacts__form__item">
                             <div class="contacts__form__block">
@@ -181,6 +222,11 @@
                             <div class="contacts__form__block">
                               <input type="text" placeholder="ВАШ ТЕЛЕФОН" class="contacts__input">
                             </div>
+                            <div class="contacts__form__item visible-xs">
+                              <div class="contacts__form__block">
+                                <textarea placeholder="ВАШ ВОПРОС" class="contacts__textarea"></textarea>
+                              </div>
+                            </div>
                             <div class="contacts__form__block">
                               <input type="submit" value="отправить заявку" class="item-link item-link_contacts">
                             </div>
@@ -194,6 +240,20 @@
             </div>
             <div class="contacts__map">
               <img src="img/contact-map.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="consultation visible-xs">
+      <div class="container">
+        <div class="consultation__item">
+          <div class="table-block">
+            <div class="block-vertical">
+              <span class="consultation__number hidden-xs">+7 (965) 294-14-14</span>
+              <span class="consultation__text hidden-xs">Начните с консультации!</span>
+              <span class="consultation__text visible-xs">Начните с консультации!</span>
+              <span class="consultation__number visible-xs">+7 (965) 294-14-14</span>
             </div>
           </div>
         </div>
@@ -302,6 +362,7 @@
     </div>
   </div>
 
+<script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
